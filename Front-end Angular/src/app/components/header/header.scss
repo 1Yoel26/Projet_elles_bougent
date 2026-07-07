@@ -1,0 +1,21 @@
+mat-toolbar{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+
+mat-toolbar img{
+    height: 20px;
+    display: block;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
