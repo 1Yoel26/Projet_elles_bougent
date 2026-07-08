@@ -3,12 +3,12 @@ video{
     margin: auto;
 }
 
-.img-accueil{
-    height: 60px;
-}
 
-.div-accueil1{
+
+.div-conteneur-accueil{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
+    background-color: cornflowerblue;
 }
