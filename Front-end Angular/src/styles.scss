@@ -4,6 +4,7 @@
 // Learn more about theming and how to use it for your application's
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
+@use 'app/styles/colors' as colors;
 
 html {
   height: 100%;
@@ -11,7 +12,7 @@ html {
     (
       color: (
         primary: mat.$rose-palette,
-        tertiary: mat.$red-palette,
+        tertiary: mat.$red-palette
       ),
       typography: Roboto,
       density: 0,
@@ -45,6 +46,8 @@ body{
 }
 
 main{
-  margin-top: 64px; // la taille du menu fixed
+  margin-top: 75px; // la taille du menu fixed
 }
+
+
 

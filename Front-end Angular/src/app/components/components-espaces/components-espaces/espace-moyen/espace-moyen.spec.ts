@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MiniContaineurAccueil } from './mini-containeur-accueil';
+import { EspaceMoyen } from './espace-moyen';
 
-describe('MiniContaineurAccueil', () => {
-  let component: MiniContaineurAccueil;
-  let fixture: ComponentFixture<MiniContaineurAccueil>;
+describe('EspaceMoyen', () => {
+  let component: EspaceMoyen;
+  let fixture: ComponentFixture<EspaceMoyen>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MiniContaineurAccueil],
+      imports: [EspaceMoyen],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(MiniContaineurAccueil);
+    fixture = TestBed.createComponent(EspaceMoyen);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

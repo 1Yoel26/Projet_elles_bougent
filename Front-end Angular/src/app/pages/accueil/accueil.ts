@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { MiniContaineurAccueil } from '../../components/mini-containeur-accueil/mini-containeur-accueil';
+import { EspacePetit } from "../../components/components-espaces/components-espaces/espace-petit/espace-petit";
 
 @Component({
   selector: 'app-accueil',
-  imports: [MatCardModule, MiniContaineurAccueil],
+  imports: [MatCardModule, EspacePetit],
   templateUrl: './accueil.html',
   styleUrl: './accueil.scss',
 })
