@@ -1,13 +1,24 @@
 video{
     display: block;
-    width: 85%;
+    width: 95%;
     margin: auto;
-    border: 1px solid blueviolet;
     border-radius: 30px;
 }
 
 
+.div-bilan-chiffres{
+    background-color: var(--rose-secondaire);
+    padding: 20px;
+}
 
-.div-conteneur-accueil{
-    
+.tire-div-bilan-chiffres{
+    color: var(--rose-tertiaire);
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.div-chiffres-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
