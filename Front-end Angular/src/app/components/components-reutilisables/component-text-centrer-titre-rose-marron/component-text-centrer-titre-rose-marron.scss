@@ -1,0 +1,21 @@
+
+.div-text-centrer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.div-text-centrer h2{
+
+    color: var(--rose-marron);
+    text-align: center;
+    
+}
+
+.div-text-centrer p{
+    width: 95%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    
+}

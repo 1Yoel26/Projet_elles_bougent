@@ -1,12 +1,12 @@
 <div>
     <div>
-            <video src="videos/elles-bougent.mov" autoplay55 controls muted loop></video>
+            <video src="videos/elles-bougent.mov" playsinline [muted]="true" [autoplay]="false" [loop]="true"></video>
     </div>
 </div>
 
 <app-espace-petit></app-espace-petit>
 
-<div class="div-flex-row">
+<div class="div-grid-col-250">
 
     <app-component-accueil1 
     sourceImage="images/home-liens-3.jpg" 
@@ -41,7 +41,7 @@
             Transmettre la passion,
             <br>Susciter des vocations
         </h4>
-
+  
         <p class="p-presentation"> 
             En France, les femmes ne représentent que 24% des ingénieurs. 
             Face à ce constat, Elles bougent agit pour faire déconstruire 
@@ -51,8 +51,8 @@
 
         <p class="p-presentation">    
             Grâce à un réseau unique de marraines, de partenaires et d’établissements 
-            scolaires, l’association sensibilise et inspire les filles à oser ces
-            carrières d’avenir.
+            scolaires, l'association sensibilise et inspire les filles à oser ces
+            carrières d'avenir.
         </p>
 
        <button mat-raised-button>Découvrir l'association</button>
@@ -80,6 +80,61 @@
             <p class="p-chiffre-grid">collèges et lycées</p>
         </div>
 
-        
     </div>
 </div>
+
+<app-espace-petit></app-espace-petit>
+
+
+<app-component-text-centrer-titre-rose-marron
+
+    titre="Je veux agir"
+
+    contenu="Vous souhaitez contribuer à faire bouger les lignes ?
+                En tant qu'entreprise, établissement scolaire,
+                ingénieur·e , technicien·ne, enseignant·e,
+                vous pouvez vous engager à nos côtés pour encourager
+                les filles à oser les carrières scientifiques et
+                techniques."> 
+                
+</app-component-text-centrer-titre-rose-marron>
+
+<app-espace-petit></app-espace-petit>
+
+<div class="div-grid-col-300">
+
+    <div class="div-component">
+
+        <div class="item-img">
+
+        </div>
+
+        <div class="item-texte">
+
+            <p>
+                Je suis une entreprise ou un établissement d'enseignement supérieur
+            </p>
+
+        </div>
+
+        <div class="item-bouton">
+
+            <button mat-raised-button>Je deviens partenaire</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<app-component-text-centrer-titre-rose-marron
+
+    titre="Les partenaires Elles bougent"
+
+    contenu="Entreprises, établissements d’enseignement supérieur, institutionnels, fédérations et associations,
+tous s’engagent aux côtés d’Elles bougent pour valoriser les talents féminins et promouvoir la mixité dans les secteurs scientifiques, techniques et industriels."> 
+
+</app-component-text-centrer-titre-rose-marron>
