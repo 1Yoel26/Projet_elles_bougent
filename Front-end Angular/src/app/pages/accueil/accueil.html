@@ -1,6 +1,6 @@
 <div>
     <div>
-            <video src="videos/elles-bougent.mov" playsinline [muted]="true" [autoplay]="false" [loop]="true"></video>
+            <video src="videos/elles-bougent.mov" playsinline [muted]="true" [autoplay]="true" [loop]="true"></video>
     </div>
 </div>
 
@@ -9,21 +9,21 @@
 <div class="div-grid-col-250">
 
     <app-component-accueil1 
-    sourceImage="images/home-liens-3.jpg" 
+    sourceImage="images/images-page-accueil/home-liens-3.jpg" 
     titre="Pour des communes actrices de mixité"
     description="Nos 15 propositions"
     >
     </app-component-accueil1>
 
     <app-component-accueil1 
-    sourceImage="images/home-liens-3.jpg" 
+    sourceImage="images/images-page-accueil/home-liens-3.jpg" 
     titre="Comment nous allouer votre taxe d'apprentissage ?"
     description="La plateforme est ouverte !"
     >
     </app-component-accueil1>
 
     <app-component-accueil1 
-    sourceImage="images/home-liens-3.jpg" 
+    sourceImage="images/images-page-accueil/home-liens-3.jpg" 
     titre="Découvrez les résultats de notre étude d'impact social !"
     description="Replay du webinaire et synthèse"
     >
@@ -101,34 +101,89 @@
 
 <app-espace-petit></app-espace-petit>
 
-<div class="div-grid-col-300">
+<div class="div-grid-col-200">
 
-    <div class="div-component">
+    <app-component-accueil-inscription
+    backgroundImage="images/images-page-accueil/agir-partenaire.jpg"
+    texte="Je suis une entreprise ou un établissement d'enseignement supérieur"
+    texteBoutton="Je deviens partenaire">
 
-        <div class="item-img">
+    </app-component-accueil-inscription>
 
-        </div>
+    <app-component-accueil-inscription
+    backgroundImage="images/images-page-accueil/agir-marraine.jpg"
+    texte="Je suis une ingénieure ou une technicienne"
+    texteBoutton="Je deviens bénévole">
 
-        <div class="item-texte">
+    </app-component-accueil-inscription>
 
-            <p>
-                Je suis une entreprise ou un établissement d'enseignement supérieur
-            </p>
+    <app-component-accueil-inscription
+    backgroundImage="images/images-page-accueil/agir-education.jpg"
+    texte="Je travaille
+dans l'Éducation nationale"
+    texteBoutton="Je m'inscris">
 
-        </div>
+    </app-component-accueil-inscription>
 
-        <div class="item-bouton">
+    <app-component-accueil-inscription
+    backgroundImage="images/images-page-accueil/agir-etudiantes.jpg"
+    texte="Je suis étudiante en sciences ou en technique"
+    texteBoutton="Je m'inscris">
 
-            <button mat-raised-button>Je deviens partenaire</button>
+    </app-component-accueil-inscription>
 
-        </div>
+</div>
+
+<app-espace-petit></app-espace-petit>
+
+<div class="div-container-actualite">
+
+    <app-espace-petit></app-espace-petit>
+
+    <h1 class="titreActualite">Actualités</h1>
+
+    <div class="div-flex-row-wrap-center">
+
+        <app-component-accueil-actualite
+        sourceImage="/images/images-page-accueil/img_actualite1.jpg"
+        date="10 juillet 2026"
+        texte="Elles bougent et WiN France renouvellent leur partenariat"
+        ></app-component-accueil-actualite>
+        
+        <app-component-accueil-actualite
+        sourceImage="/images/images-page-accueil/img_actualite2.jpg"
+        date="7 juillet 2026"
+        texte="Étude d'impact social : Elles bougent démontre son impact sur les vocations scientifiques des filles"
+        ></app-component-accueil-actualite>
+        
+        <app-component-accueil-actualite
+        sourceImage="/images/images-page-accueil/img_actualite3.jpg"
+        date="30 Juin 2026"
+        texte="Eurosatory 2026 : une journée au cœur des métiers de la défense et de la sécurité"
+        ></app-component-accueil-actualite>
+        
+        <app-component-accueil-actualite
+        sourceImage="/images/images-page-accueil/img_actualite4.jpg"
+        date="26 Juin 2026"
+        texte="David Meneses, nouveau Président d'honneur d'Elles bougent"
+        ></app-component-accueil-actualite>
+        
 
     </div>
+
+    <app-espace-petit></app-espace-petit>
+
+    <div class="div-flex-row-center">
+        <button mat-raised-button>Voir toutes les actualités</button>
+    </div>
+    
+    <app-espace-petit></app-espace-petit>
 
 </div>
 
 
 
+<app-espace-petit></app-espace-petit>
 
 <app-component-text-centrer-titre-rose-marron
 
@@ -138,3 +193,30 @@
 tous s’engagent aux côtés d’Elles bougent pour valoriser les talents féminins et promouvoir la mixité dans les secteurs scientifiques, techniques et industriels."> 
 
 </app-component-text-centrer-titre-rose-marron>
+
+
+<app-espace-petit></app-espace-petit>
+
+<div class="divContainerCarroussel">
+
+    <div class="divCarrousselDesPartenaires">
+    
+        <img src="/images/images-page-accueil/images-partenaires/bordeaux-inp.logo.jpg" alt="">
+        <img src="/images/images-page-accueil/images-partenaires/11721-totalenergies_logo_rgb.logo.jpg" alt="">
+        <img src="/images/images-page-accueil/images-partenaires/11721-totalenergies_logo_rgb.logo.jpg" alt="">
+        <img src="/images/images-page-accueil/images-partenaires/11721-totalenergies_logo_rgb.logo.jpg" alt="">
+        <img src="/images/images-page-accueil/images-partenaires/logo-circet.logo.jpg" alt="">
+
+    </div>
+
+</div>
+
+<app-espace-petit></app-espace-petit>
+
+<div class="div-flex-row-center">
+    <button mat-stroked-button>Découvrez nos 380 partemaires</button>
+</div>
+
+
+
+<app-espace-petit></app-espace-petit>

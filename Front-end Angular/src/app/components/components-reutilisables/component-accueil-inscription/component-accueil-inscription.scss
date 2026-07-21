@@ -1,0 +1,25 @@
+.div-component{
+    
+    background-color: var(--rose-fonce);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.item-img{  
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item-texte{
+    color: var(--blanc);
+    text-align: center;
+    font-weight: 600;
+    height: 95px;
+}
+
+.item-bouton{
+    display: flex;
+    justify-content: center;
+}

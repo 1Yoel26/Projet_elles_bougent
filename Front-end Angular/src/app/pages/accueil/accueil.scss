@@ -40,26 +40,52 @@ video{
     line-height: 1.5;
 }
 
-
-.div-component{
-    height: 400px;
-    background-color: var(--rose-fonce);
-    border-radius: 10px;
+.div-container-actualite{
+    background-color: var(--vert-clair);
 }
 
-.item-img{
-    height: 300px;
-    background-image: url("/images/agir-partenaire.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.item-texte{
-    color: var(--blanc);
+.titreActualite{
     text-align: center;
-    font-weight: bold;
+}
+.divContainerCarroussel{
+
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    //border: 2px solid rebeccapurple;
+
 }
 
-.item-boutton{
-    
+
+.divCarrousselDesPartenaires{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    height: 80%;
+    margin: auto;
+    //border: 2px solid blue;
+    animation: animationCarroussel 5s linear infinite;;
+}
+
+
+.divCarrousselDesPartenaires img{
+    width: auto;  
+    height: 100px;
+    border-radius: 30px;
+}
+
+
+@keyframes animationCarroussel{
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
