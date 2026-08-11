@@ -16,3 +16,73 @@
     gap: 15px;
 }
 
+
+// Css pour mobiles et tablettes par défaut
+
+.div-grid-col-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.div-grid-col-2,
+.div-grid-col-3,
+.div-grid-col-4,
+.div-grid-col-5,
+.div-grid-mobile{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 10px;
+}
+
+.div-grid-col-2-2{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    column-gap: 10px;
+}
+
+
+
+
+// Css pour grands écrans
+@media(min-width: 1033px){
+
+    .div-grid-col-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .div-grid-col-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-inline: 10px;
+    }
+
+    .div-grid-col-2-2{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .div-grid-col-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        padding-inline: 10px;
+    }
+
+    .div-grid-col-4{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        padding-inline: 10px;
+    }
+
+
+}
+
+
+// Css pour tablettes non utilisé pour le moment :
+//@media(min-width:768px) and (max-width: 1032px){
+//}

@@ -1,12 +1,12 @@
 <div>
     <div>
-            <video src="videos/elles-bougent.mov" playsinline [muted]="true" [autoplay]="true" [loop]="true"></video>
+            <video src="videos/elles-bougent.mov" playsinline [muted]="true" [autoplay]="false" [loop]="true"></video>
     </div>
 </div>
 
 <app-espace-petit></app-espace-petit>
 
-<div class="div-grid-col-250">
+<div class="div-grid-col-3">
 
     <app-component-accueil1 
     sourceImage="images/images-page-accueil/home-liens-3.jpg" 
@@ -33,7 +33,7 @@
 
 <app-espace-petit></app-espace-petit>
 
-<div class="div-grid-col-300 div-bilan-chiffres">
+<div class="div-grid-col-2 div-bilan-chiffres">
 
     <div>
 
@@ -101,7 +101,7 @@
 
 <app-espace-petit></app-espace-petit>
 
-<div class="div-grid-col-200">
+<div class="div-grid-col-4">
 
     <app-component-accueil-inscription
     backgroundImage="images/images-page-accueil/agir-partenaire.jpg"
@@ -119,8 +119,7 @@
 
     <app-component-accueil-inscription
     backgroundImage="images/images-page-accueil/agir-education.jpg"
-    texte="Je travaille
-dans l'Éducation nationale"
+    texte="Je travaille dans l'Éducation nationale"
     texteBoutton="Je m'inscris">
 
     </app-component-accueil-inscription>
@@ -142,7 +141,7 @@ dans l'Éducation nationale"
 
     <h1 class="titreActualite">Actualités</h1>
 
-    <div class="div-flex-row-wrap-center">
+    <div class="div-grid-col-4">
 
         <app-component-accueil-actualite
         sourceImage="/images/images-page-accueil/img_actualite1.jpg"
@@ -168,12 +167,11 @@ dans l'Éducation nationale"
         texte="David Meneses, nouveau Président d'honneur d'Elles bougent"
         ></app-component-accueil-actualite>
         
-
     </div>
 
     <app-espace-petit></app-espace-petit>
 
-    <div class="div-flex-row-center">
+    <div class="div-grid-col-1">
         <button mat-raised-button>Voir toutes les actualités</button>
     </div>
     
@@ -197,26 +195,45 @@ tous s’engagent aux côtés d’Elles bougent pour valoriser les talents fémi
 
 <app-espace-petit></app-espace-petit>
 
-<div class="divContainerCarroussel">
 
-    <div class="divCarrousselDesPartenaires">
-    
-        <img src="/images/images-page-accueil/images-partenaires/bordeaux-inp.logo.jpg" alt="">
-        <img src="/images/images-page-accueil/images-partenaires/11721-totalenergies_logo_rgb.logo.jpg" alt="">
-        <img src="/images/images-page-accueil/images-partenaires/11721-totalenergies_logo_rgb.logo.jpg" alt="">
-        <img src="/images/images-page-accueil/images-partenaires/11721-totalenergies_logo_rgb.logo.jpg" alt="">
-        <img src="/images/images-page-accueil/images-partenaires/logo-circet.logo.jpg" alt="">
+<app-diaporama
+[listeNomsImages]="listeNomsImages"
+[cheminImage]="cheminImage"
+
+></app-diaporama>
+
+
+<app-espace-petit></app-espace-petit>
+
+
+<div class="div-flex-row-center">
+    <button mat-stroked-button>Découvrez nos 380 partenaires</button>
+</div>
+
+
+<app-espace-petit></app-espace-petit>
+
+
+<div class="div-container-carte">
+
+    <div class="div-item-texte">
+
+        <h2>Elles bougent, en France et à l’international !</h2>
+
+        <p>
+            Grâce à ses délégations régionales et internationales, 
+            son club éducatif et ses partenaires présents en France 
+            et à l’étranger, Elles bougent sensibilise les filles partout
+            dans le monde et les encourage à s'orienter vers les métiers 
+            scientifiques et techniques.
+        </p>
+
+        <button mat-raised-button>Voir nos actions</button>
+
+    </div>
+
+    <div id="div-item-carte">
 
     </div>
 
 </div>
-
-<app-espace-petit></app-espace-petit>
-
-<div class="div-flex-row-center">
-    <button mat-stroked-button>Découvrez nos 380 partemaires</button>
-</div>
-
-
-
-<app-espace-petit></app-espace-petit>

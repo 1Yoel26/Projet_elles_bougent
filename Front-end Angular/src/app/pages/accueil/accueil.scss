@@ -5,7 +5,6 @@ video{
     border-radius: 30px;
 }
 
-
 .div-bilan-chiffres{
     background-color: var(--rose-claire);
     padding: 20px;
@@ -26,7 +25,7 @@ video{
 }
 
 .titre-chiffre-grid{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 900;
     color: var(--rose-fonce);
 }
@@ -47,6 +46,7 @@ video{
 .titreActualite{
     text-align: center;
 }
+
 .divContainerCarroussel{
 
     display: flex;
@@ -56,8 +56,6 @@ video{
     width: 100%;
     overflow: hidden;
     border-radius: 30px;
-    //border: 2px solid rebeccapurple;
-
 }
 
 
@@ -68,8 +66,7 @@ video{
     gap: 35px;
     height: 80%;
     margin: auto;
-    //border: 2px solid blue;
-    animation: animationCarroussel 5s linear infinite;;
+    animation: animationCarroussel 10s linear infinite;;
 }
 
 
@@ -77,15 +74,27 @@ video{
     width: auto;  
     height: 100px;
     border-radius: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 }
 
 
 @keyframes animationCarroussel{
     from {
-        transform: translateX(0);
+        transform: translateX(90%);
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-90%);
     }
 }
+
+.div-container-carte{
+    border: 2px solid rgb(61, 141, 211);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 400px;
+    gap: 20px;
+    padding: 15px;
+
+}
+

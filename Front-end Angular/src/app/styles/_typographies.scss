@@ -1,0 +1,11 @@
+// Css par défaut pour mobiles et tablettes
+main{
+    font-size: 20px;
+}
+
+// Css pour grands écrans
+@media(min-width: 1033px){
+    main{
+        font-size: 18px;
+    }
+}
