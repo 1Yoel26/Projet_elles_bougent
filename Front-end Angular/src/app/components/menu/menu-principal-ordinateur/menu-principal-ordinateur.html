@@ -1,0 +1,78 @@
+<div class="div-menu-complet">
+
+    <div class="div-grid-menu-col-9">
+
+        <div>
+            <a routerLink=""><img src="logos/logo-ellesbougent.svg" height="20px"  alt="logo-vers-page-accueil"></a>
+        </div>
+        
+        <div>
+            <a routerLink="page2">L'association</a>
+        </div>
+        
+        <div>
+            <a routerLink="">Nos actions</a>
+        </div>
+        
+        <div>
+            <a routerLink="">Délégations</a>
+        </div>
+        
+        <div>
+            <a routerLink="">S'engager</a>
+        </div>
+        
+        <div>
+            <a routerLink="">Actualités</a>
+        </div>
+        
+        <div>
+          <a routerLink="">Faire un don</a>
+        </div>
+        
+        <div>
+            <a routerLink="">Espace membre</a>
+        </div>
+        
+        <div>
+            <a routerLink="">Recherche</a>
+        </div>
+
+    </div>
+
+
+    <div class="div-sous-menu-principal">
+
+        <div>
+
+            <h3>{{contenuSousMenu.titrePresentation1}}</h3>
+            <p>{{contenuSousMenu.paragraphePresentation1}}</p>
+
+        </div>
+
+        <div class="div-grid-col-3">
+
+            @for (item of contenuSousMenu.listeNomsImages; track $index) {
+                
+                <div>
+                    <img class="border-radius" src="{{item.cheminImage}}" alt="" width="100%">
+                    <span class="titres-images">{{item.titreImage}}</span>
+                </div>
+            }
+
+        </div>
+
+        <div class="div-presentation-rose border-radius">
+
+            <h2>{{contenuSousMenu.titrePresentation2}}</h2>
+
+            <p>{{contenuSousMenu.paragraphePresentation2}}</p>
+        
+            <button mat-raised-button class="bouton-rose">{{contenuSousMenu.titreBouton2}}</button>
+        
+        </div>
+
+
+    </div>
+
+</div>

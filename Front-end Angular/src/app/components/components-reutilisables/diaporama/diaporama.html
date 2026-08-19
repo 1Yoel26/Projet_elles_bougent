@@ -1,6 +1,6 @@
 <div class="divContainerCarroussel div-grid-col-1">
 
-    <div class="divCarrousselDesPartenaires">
+    <div class="divCarrousselDesPartenaires" [style.animation-duration.s]="dureeDiapo">
 
         @for(nomUneImage of listeNomsImages; track nomUneImage){
 
@@ -13,8 +13,6 @@
             <img [src]="cheminImage + nomUneImage"    alt="">
 
         }
-    
-        
 
     </div>
 

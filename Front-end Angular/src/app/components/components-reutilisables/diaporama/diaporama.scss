@@ -3,6 +3,7 @@
     background-color: aliceblue;
     height: 150px;
     width: 100%;
+    margin: auto;
     overflow: hidden;
     border-radius: 30px;
 }
@@ -13,7 +14,8 @@
     align-items: center;
     justify-items: center;
     gap: 35px;
-    animation: animationCarroussel 10s linear infinite;;
+    padding: 20px;
+    animation: animationCarroussel 1s linear infinite;
 }
 
 
@@ -34,3 +36,4 @@
         transform: translateX(-50%);
     }
 }
+

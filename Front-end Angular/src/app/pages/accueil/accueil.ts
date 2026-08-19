@@ -46,7 +46,7 @@ export class Accueil implements OnInit, AfterViewInit{
   
   ngAfterViewInit(): void {
 
-    const map = Leaflet.map('div-item-carte').setView([48.8566, 2.3522], 5);
+    const map = Leaflet.map('div-item-carte').setView([48.8566, 2.3522], 1);
   
     Leaflet.tileLayer(
 
@@ -54,4 +54,5 @@ export class Accueil implements OnInit, AfterViewInit{
 
     ).addTo(map);
   }
+  
 }
