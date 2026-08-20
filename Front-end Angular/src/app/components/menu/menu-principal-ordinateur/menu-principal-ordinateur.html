@@ -2,24 +2,24 @@
 
     <div class="div-grid-menu-col-9">
 
-        <div>
-            <a routerLink=""><img src="logos/logo-ellesbougent.svg" height="20px"  alt="logo-vers-page-accueil"></a>
+        <div class="div-logo">
+            <a routerLink=""><img src="logos/logo-ellesbougent.svg" width="100%"  alt="logo-vers-page-accueil"></a>
         </div>
         
         <div>
-            <a routerLink="page2">L'association</a>
+            <a routerLink="page2" (mouseenter)="lienSurvoler('association')" (mouseleave)="fermerSousMenuAvecDelais()">L'association</a>
         </div>
         
         <div>
-            <a routerLink="">Nos actions</a>
+            <a routerLink="" (mouseenter)="lienSurvoler('actions')">Nos actions</a>
         </div>
         
         <div>
-            <a routerLink="">Délégations</a>
+            <a routerLink="" (mouseenter)="lienSurvoler('delegation')">Délégations</a>
         </div>
         
         <div>
-            <a routerLink="">S'engager</a>
+            <a routerLink="" (mouseenter)="lienSurvoler('engagement')">S'engager</a>
         </div>
         
         <div>
@@ -40,8 +40,7 @@
 
     </div>
 
-
-    <div class="div-sous-menu-principal">
+    <div *ngIf="lienEstSurvoler != null" class="div-sous-menu-principal" (mouseleave)="sousMenuQuitter()">
 
         <div>
 
@@ -55,8 +54,10 @@
             @for (item of contenuSousMenu.listeNomsImages; track $index) {
                 
                 <div>
-                    <img class="border-radius" src="{{item.cheminImage}}" alt="" width="100%">
-                    <span class="titres-images">{{item.titreImage}}</span>
+                    <a routerLink="">
+                        <img class="border-radius" src="{{item.cheminImage}}" alt="" width="100%">
+                        <span class="titres-images">{{item.titreImage}}</span>
+                    </a>
                 </div>
             }
 
@@ -68,7 +69,7 @@
 
             <p>{{contenuSousMenu.paragraphePresentation2}}</p>
         
-            <button mat-raised-button class="bouton-rose">{{contenuSousMenu.titreBouton2}}</button>
+            <button mat-flat-button>{{contenuSousMenu.titreBouton2}}</button>
         
         </div>
 
