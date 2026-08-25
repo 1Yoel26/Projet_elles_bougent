@@ -1,0 +1,30 @@
+<div class="div-grid-col-2">
+
+    <div class="div-texte">
+
+        <h3 class="titre">
+            {{titre}}
+        </h3>
+
+        <p>
+            {{description}}
+        </p>
+
+        <button mat-stroked-button>
+            {{titreBouton}}
+        </button>
+
+    </div>
+
+    <div class="div-image"
+    
+    [ngStyle]= 
+   
+    "{
+        'background-image' : 'url(' + cheminImage + ')'
+    }" 
+    >
+
+    </div>
+
+</div>

@@ -2,78 +2,84 @@
 
     <div class="div-grid-menu-col-9">
 
-        <div class="div-logo">
+        <div class="div-logo" (mouseenter)="sousMenuQuitter()">
             <a routerLink=""><img src="logos/logo-ellesbougent.svg" width="100%"  alt="logo-vers-page-accueil"></a>
         </div>
         
         <div>
-            <a routerLink="page2" (mouseenter)="lienSurvoler('association')" (mouseleave)="fermerSousMenuAvecDelais()">L'association</a>
+            <a routerLink="association" (mouseenter)="lienSurvoler('association')" (click)="sousMenuQuitter()">L'association</a>
         </div>
         
         <div>
-            <a routerLink="" (mouseenter)="lienSurvoler('actions')">Nos actions</a>
+            <a routerLink="" (mouseenter)="lienSurvoler('actions')" (click)="sousMenuQuitter()">Nos actions</a>
         </div>
         
         <div>
-            <a routerLink="" (mouseenter)="lienSurvoler('delegation')">Délégations</a>
+            <a routerLink="" (mouseenter)="lienSurvoler('delegation')" (click)="sousMenuQuitter()">Délégations</a>
         </div>
         
         <div>
-            <a routerLink="" (mouseenter)="lienSurvoler('engagement')">S'engager</a>
+            <a routerLink="" (mouseenter)="lienSurvoler('engagement')" (click)="sousMenuQuitter()">S'engager</a>
         </div>
         
         <div>
-            <a routerLink="">Actualités</a>
+            <a routerLink="" (mouseenter)="sousMenuQuitter()">Actualités</a>
         </div>
         
         <div>
-          <a routerLink="">Faire un don</a>
+          <a routerLink="" (mouseenter)="sousMenuQuitter()">Faire un don</a>
         </div>
         
         <div>
-            <a routerLink="">Espace membre</a>
+            <a routerLink="" (mouseenter)="sousMenuQuitter()">Espace membre</a>
         </div>
         
         <div>
-            <a routerLink="">Recherche</a>
+            <a routerLink="" (mouseenter)="sousMenuQuitter()">Recherche</a>
         </div>
 
     </div>
 
-    <div *ngIf="lienEstSurvoler != null" class="div-sous-menu-principal" (mouseleave)="sousMenuQuitter()">
+    @if(lienEstSurvoler != null){
 
-        <div>
+        <div class="div-sous-menu-principal" (mouseleave)="sousMenuQuitter()">
 
-            <h3>{{contenuSousMenu.titrePresentation1}}</h3>
-            <p>{{contenuSousMenu.paragraphePresentation1}}</p>
+            <div>
+
+                <h3>{{contenuSousMenu.titrePresentation1}}</h3>
+                <p>{{contenuSousMenu.paragraphePresentation1}}</p>
+
+            </div>
+
+            <div class="div-grid-col-3">
+
+                @for (item of contenuSousMenu.listeNomsImages; track $index) {
+                    
+                    <div>
+                        <a routerLink="">
+                            <img class="border-radius" src="{{item.cheminImage}}" alt="" width="100%">
+                            <span class="titres-images">{{item.titreImage}}</span>
+                        </a>
+                    </div>
+                }
+
+            </div>
+
+            <div class="div-presentation-rose border-radius">
+
+                <h2>{{contenuSousMenu.titrePresentation2}}</h2>
+
+                <p>{{contenuSousMenu.paragraphePresentation2}}</p>
+            
+                <button mat-flat-button>{{contenuSousMenu.titreBouton2}}</button>
+            
+            </div>
+
 
         </div>
 
-        <div class="div-grid-col-3">
 
-            @for (item of contenuSousMenu.listeNomsImages; track $index) {
-                
-                <div>
-                    <a routerLink="">
-                        <img class="border-radius" src="{{item.cheminImage}}" alt="" width="100%">
-                        <span class="titres-images">{{item.titreImage}}</span>
-                    </a>
-                </div>
-            }
+    }
 
-        </div>
-
-        <div class="div-presentation-rose border-radius">
-
-            <h2>{{contenuSousMenu.titrePresentation2}}</h2>
-
-            <p>{{contenuSousMenu.paragraphePresentation2}}</p>
-        
-            <button mat-flat-button>{{contenuSousMenu.titreBouton2}}</button>
-        
-        </div>
-
-
-    </div>
-
+    
 </div>

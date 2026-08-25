@@ -1,0 +1,20 @@
+.titre{
+    color: var(--rose-marron);
+}
+
+.div-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    //border: 2px solid blue;
+    min-height: 250px;
+}
+
+@media(max-width: 767px){
+    .div-image{
+        order: 2;
+    }
+
+    .div-texte{
+        order: 1;
+    }
+}

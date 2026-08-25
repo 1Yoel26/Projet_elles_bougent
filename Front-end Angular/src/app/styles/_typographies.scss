@@ -3,6 +3,14 @@ main{
     font-size: 20px;
 }
 
+
+@media(min-width: 768px) and (max-width: 1019px){
+    main{
+        font-size: 20px;
+    }
+}
+
+
 // Css pour grands écrans
 @media(min-width: 1033px){
     main{

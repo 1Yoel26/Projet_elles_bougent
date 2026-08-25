@@ -27,6 +27,19 @@
     margin-right: 5vh;
 }
 
+a{
+    color: black;
+}
+
+a:hover{
+    color: var(--rose-fonce);
+}
+
+a:focus{
+    color: var(--rose-fonce);
+    font-weight: bold;
+}
+
 
 .div-sous-menu-principal{
     display: grid;
