@@ -4,10 +4,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterLink } from '@angular/router';
 import { SousMenuPrincipal } from '../../../interfaces/sous-menu-principal';
 import { dataMenuOrdinateur } from '../../../data-statique/menu-ordinateur';
+import { MatIcon } from "@angular/material/icon";
 
 @Component({
   selector: 'app-menu-principal-ordinateur',
-  imports: [MatToolbarModule, RouterLink, MatButtonModule],
+  imports: [
+    MatToolbarModule,
+    RouterLink,
+    MatButtonModule,
+    MatIcon
+],
   templateUrl: './menu-principal-ordinateur.html',
   styleUrl: './menu-principal-ordinateur.scss',
 })
@@ -16,7 +22,7 @@ export class MenuPrincipalOrdinateur {
 
   public contenuSousMenu!: SousMenuPrincipal;
   lienEstSurvoler: string | null = null;
-  listeDesLiensASurvoler: string[] = ["association", "actions", "delegation", "engagement"];
+  listeDesLiensASurvoler: string[] = ["association", "actions", "delegations", "engagement"];
 
 
   public lienSurvoler(lien: string){
@@ -39,7 +45,7 @@ export class MenuPrincipalOrdinateur {
     else{
 
       this.lienEstSurvoler = null;
-      alert('lien invalide');
+      alert('Lien invalide : ');
 
     }
 

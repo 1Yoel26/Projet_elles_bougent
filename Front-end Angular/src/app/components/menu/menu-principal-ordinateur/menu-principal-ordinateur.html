@@ -3,39 +3,43 @@
     <div class="div-grid-menu-col-9">
 
         <div class="div-logo" (mouseenter)="sousMenuQuitter()">
-            <a routerLink=""><img src="logos/logo-ellesbougent.svg" width="100%"  alt="logo-vers-page-accueil"></a>
+            <a routerLink=""><img src="logos/logo-ellesbougent.svg" width="100%"   alt="logo-vers-page-accueil"></a>
         </div>
         
         <div>
-            <a routerLink="association" (mouseenter)="lienSurvoler('association')" (click)="sousMenuQuitter()">L'association</a>
+            <span (mouseenter)="lienSurvoler('association')">L'association</span>
         </div>
         
         <div>
-            <a routerLink="" (mouseenter)="lienSurvoler('actions')" (click)="sousMenuQuitter()">Nos actions</a>
+            <span (mouseenter)="lienSurvoler('actions')">Nos actions</span>
         </div>
         
         <div>
-            <a routerLink="" (mouseenter)="lienSurvoler('delegation')" (click)="sousMenuQuitter()">Délégations</a>
+            <span (mouseenter)="lienSurvoler('delegations')">Délégations</span>
         </div>
         
         <div>
-            <a routerLink="" (mouseenter)="lienSurvoler('engagement')" (click)="sousMenuQuitter()">S'engager</a>
+            <span (mouseenter)="lienSurvoler('engagement')">S'engager</span>
         </div>
         
         <div>
-            <a routerLink="" (mouseenter)="sousMenuQuitter()">Actualités</a>
+            <span (mouseenter)="sousMenuQuitter()">Actualités</span>
         </div>
         
         <div>
-          <a routerLink="" (mouseenter)="sousMenuQuitter()">Faire un don</a>
+          <span (mouseenter)="sousMenuQuitter()">Faire un don</span>
         </div>
         
         <div>
-            <a routerLink="" (mouseenter)="sousMenuQuitter()">Espace membre</a>
+            <button (mouseenter)="sousMenuQuitter()" mat-flat-button>Espace membre</button>
         </div>
         
         <div>
-            <a routerLink="" (mouseenter)="sousMenuQuitter()">Recherche</a>
+            <button (mouseenter)="sousMenuQuitter()" mat-icon-button>
+                <mat-icon class="icon-recherche">
+                   search 
+                </mat-icon>
+            </button>
         </div>
 
     </div>
@@ -49,6 +53,16 @@
                 <h3>{{contenuSousMenu.titrePresentation1}}</h3>
                 <p>{{contenuSousMenu.paragraphePresentation1}}</p>
 
+                <div class="div-flex-row">
+
+                    @for(item of contenuSousMenu.tableauxBoutons1; track $index;){
+
+                        <button mat-stroked-button (click)="sousMenuQuitter()" routerLink="{{item.lienBouton}}">{{item.titreBouton}}</button>
+
+                    }
+
+                </div>
+                
             </div>
 
             <div class="div-grid-col-3">
@@ -56,11 +70,12 @@
                 @for (item of contenuSousMenu.listeNomsImages; track $index) {
                     
                     <div>
-                        <a routerLink="">
+                        <a routerLink="{{item.urlPage}}" (click)="sousMenuQuitter()">
                             <img class="border-radius" src="{{item.cheminImage}}" alt="" width="100%">
                             <span class="titres-images">{{item.titreImage}}</span>
                         </a>
                     </div>
+
                 }
 
             </div>
@@ -70,8 +85,9 @@
                 <h2>{{contenuSousMenu.titrePresentation2}}</h2>
 
                 <p>{{contenuSousMenu.paragraphePresentation2}}</p>
-            
-                <button mat-flat-button>{{contenuSousMenu.titreBouton2}}</button>
+                
+                <button routerLink="{{contenuSousMenu.tableauxBoutons2.lienBouton}}" (click)="sousMenuQuitter()" mat-flat-button>{{contenuSousMenu.tableauxBoutons2.titreBouton}}</button>
+
             
             </div>
 

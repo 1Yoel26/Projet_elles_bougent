@@ -1,0 +1,38 @@
+.div-image{
+    width: 100%;
+    height: 150px;
+    background-image: url('/images/images-page-actions/non-disponible-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.div-flex-row-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    gap: 8px;
+    margin: 3px 0px;
+}
+
+.div-flex-row-action div{
+
+    
+}
+
+.div-region{
+    background-color: var(--rose-fonce);
+    border-radius: 5px;
+    color: white;
+    padding-inline: 5px;
+}
+
+.div-categorie{
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding-inline: 5px;
+}

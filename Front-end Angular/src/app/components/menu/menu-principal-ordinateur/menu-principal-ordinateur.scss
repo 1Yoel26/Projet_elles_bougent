@@ -12,6 +12,7 @@
     height: 40px;
     justify-content: center;
     align-content: center;
+    //align-items: center;
     background-color: rgb(255, 255, 255);
     text-align: center;
     gap: 10px;
@@ -27,15 +28,22 @@
     margin-right: 5vh;
 }
 
-a{
+.div-grid-menu-col-9 span{
     color: black;
+    cursor: default;
+    text-decoration: underline;
 }
 
-a:hover{
+.icon-recherche{
     color: var(--rose-fonce);
 }
 
-a:focus{
+
+.div-grid-menu-col-9 span:hover{
+    color: var(--rose-fonce);
+}
+
+.div-grid-menu-col-9 span:focus{
     color: var(--rose-fonce);
     font-weight: bold;
 }
@@ -55,9 +63,11 @@ a:focus{
     padding: 12px;
 }
 
+
 .titres-images{
     font-weight: bold;
 }
+
 
 .border-radius{
     border-radius: 15px;

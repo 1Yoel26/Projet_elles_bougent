@@ -1,0 +1,40 @@
+<div class="div-grid-col-1">
+
+    <div class="div-image"></div>
+
+    <div class="div-flex-row-action">
+        <div class="div-region">{{region}}</div>
+
+        @if (categorie != "") {
+            <div class="div-categorie">
+                {{categorie}}
+            </div>
+        }
+        
+    </div>
+
+    <div class="div-flex-row-action">
+        
+        <div>
+            <mat-icon>event</mat-icon>
+        </div>
+
+        <div>{{dateEtHeure}}</div>
+        
+    </div>
+
+    <div class="div-flex-row-action">
+        
+        <div> 
+            <mat-icon>place</mat-icon>
+        </div> 
+        
+        <div>{{ville}}</div>
+
+    </div>
+
+    <div>
+        <span>{{titre}}</span>
+    </div>
+
+</div>

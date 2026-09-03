@@ -10,9 +10,16 @@
             {{description}}
         </p>
 
-        <button mat-stroked-button>
-            {{titreBouton}}
-        </button>
+        <!--Le if() sert à gerer le cas ou il n ya pas de boutton à
+        à afficher comme pour la page association/missions -->
+         
+        @if (titreBouton != "") {
+
+            <button mat-stroked-button routerLink="{{lienBouton}}">
+                {{titreBouton}}
+            </button>
+
+        }
 
     </div>
 

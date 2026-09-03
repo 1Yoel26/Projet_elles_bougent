@@ -1,13 +1,13 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { EspacePetit } from "../../components/components-espaces/components-espaces/espace-petit/espace-petit";
-import { ComponentAccueil1 } from "../../components/components-reutilisables/component-accueil1/component-accueil1";
+import { EspacePetit } from "../../components/components-espaces-verticales/components-espaces/espace-petit/espace-petit";
 import { MatButtonModule } from '@angular/material/button';
-import { ComponentTextCentrerTitreRoseMarron } from "../../components/components-reutilisables/component-text-centrer-titre-rose-marron/component-text-centrer-titre-rose-marron";
-import { ComponentAccueilInscription } from "../../components/components-reutilisables/component-accueil-inscription/component-accueil-inscription";
-import { ComponentAccueilActualite } from '../../components/components-reutilisables/component-accueil-actualite/component-accueil-actualite';
+import { ComponentTextCentrerTitreRoseMarron } from "../../components/components-reutilisables/component-titre-rose-marron-centrer/component-text-centrer-titre-rose-marron";
 import * as Leaflet from 'leaflet';
-import { Diaporama } from "../../components/components-reutilisables/diaporama/diaporama";
+import { ComponentAccueil1 } from './components-page-accueil/component-accueil1/component-accueil1';
+import { ComponentAccueilInscription } from './components-page-accueil/component-accueil-inscription/component-accueil-inscription';
+import { ComponentAccueilActualite } from './components-page-accueil/component-accueil-actualite/component-accueil-actualite';
+import { Diaporama } from './components-page-accueil/diaporama/diaporama';
 
 @Component({
   selector: 'app-accueil',
