@@ -8,6 +8,7 @@
 @use 'app/styles/grid';
 @use 'app/styles/typographies';
 @use 'app/styles/buttons';
+@use 'app/styles/responsive_menu';
 @import 'leaflet/dist/leaflet.css';
 
 
@@ -64,14 +65,39 @@ body {
 
 
 body{
-  background-color: var(--blanc);
+  background-color: white;
 }
+
+
 
 main{
-  width: 98%;
+  width: 100%;
   margin: auto;
-  margin-top: 110px; // la taille du menu fixed (100px) + petite marge
+  margin-top: 110px; // la taille du menu fixed pour ordinateur (100px) + petite marge
   font-family: roboto;
+  background-color: white;
 }
 
 
+
+.marker-cluster div span{
+  background-color: var(--rose-fonce);
+  color: white;  
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 130px;
+  display: flex;
+  width: 10px;
+  height: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.marker-cluster div span:hover{
+
+  background-color: #f31c7d;
+
+}

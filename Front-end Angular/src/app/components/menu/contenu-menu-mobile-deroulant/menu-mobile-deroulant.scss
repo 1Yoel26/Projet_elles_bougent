@@ -1,0 +1,69 @@
+mat-expansion-panel{
+    width: 100%;
+    margin-inline: auto;
+    border-radius: 0;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    //border: 2px solid red;
+}
+
+
+
+mat-list-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    //border: 2px solid orange;
+}
+
+
+mat-panel-title{
+    font-weight: 500;
+}
+
+
+mat-nav-list{
+    //border: 2px solid orange;
+    margin-left: 10px;
+}
+
+
+
+
+.div-grid-col-1-conteneur{
+    gap: 15px;
+}
+
+
+.div-boutons{
+    width: 100%;
+    //border: 2px solid orangered;
+}
+
+.div-grid-col-2-fixe{
+
+    width: 100%;
+    //border: 2px solid orangered;
+    gap: 5px;
+    padding: 4px;
+}
+
+.div-grid-col-2-fixe a{
+
+    text-decoration: none;
+
+}
+
+.titres-images{
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.div-presentation-rose{
+    background-color: var(--rose-claire);
+    padding: 12px;
+    border-radius: 12px;
+}

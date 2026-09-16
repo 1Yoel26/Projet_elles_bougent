@@ -1,0 +1,85 @@
+<mat-accordion>
+
+    <mat-expansion-panel (opened)="recupererLien('association')">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                L'association
+            </mat-panel-title>  
+        </mat-expansion-panel-header>
+
+        <app-bloc-sous-menu 
+        [idMenu]= "idDuMenuPourEnfant3"
+        [contenuSousMenu] = "contenuSousMenu"
+        >
+
+        </app-bloc-sous-menu>
+    
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel (opened)="recupererLien('actions')">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Nos actions
+            </mat-panel-title>  
+        </mat-expansion-panel-header>
+    
+        <app-bloc-sous-menu 
+        [idMenu]= "idDuMenuPourEnfant3"
+        [contenuSousMenu] = "contenuSousMenu"
+        >
+
+        </app-bloc-sous-menu>
+    
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="recupererLien('delegations')">
+
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Délégations
+            </mat-panel-title>  
+        </mat-expansion-panel-header>
+
+        <app-bloc-sous-menu 
+        [idMenu]= "idDuMenuPourEnfant3"
+        [contenuSousMenu] = "contenuSousMenu"
+        >
+
+        </app-bloc-sous-menu>
+
+    </mat-expansion-panel>
+    
+    <mat-expansion-panel (opened)="recupererLien('engagement')">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                S'engager
+            </mat-panel-title>  
+        </mat-expansion-panel-header>
+    
+        <app-bloc-sous-menu 
+        [idMenu]= "idDuMenuPourEnfant3"
+        [contenuSousMenu] = "contenuSousMenu"
+        >
+
+        </app-bloc-sous-menu>
+    
+    </mat-expansion-panel>
+
+    <mat-nav-list>
+
+        <mat-list-item (click)="fermerLeMenu()">
+            <a routerLink="actualites">
+                Actualités
+            </a>
+        </mat-list-item>
+
+        <mat-list-item (click)="fermerLeMenu()">
+            <a routerLink="association/dons">
+                Faire un don
+            </a>
+        </mat-list-item>
+
+    </mat-nav-list>
+
+</mat-accordion>

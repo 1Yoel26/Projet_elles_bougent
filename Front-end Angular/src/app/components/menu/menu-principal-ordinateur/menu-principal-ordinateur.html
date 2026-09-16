@@ -1,4 +1,4 @@
-<div class="div-menu-complet">
+<div class="div-menu-complet-ordinateur">
 
     <div class="div-grid-menu-col-9">
 
@@ -23,19 +23,19 @@
         </div>
         
         <div>
-            <span (mouseenter)="sousMenuQuitter()">Actualités</span>
+            <span (mouseenter)="sousMenuQuitter()" routerLink="actualites">Actualités</span>
         </div>
         
         <div>
-          <span (mouseenter)="sousMenuQuitter()">Faire un don</span>
+          <span (mouseenter)="sousMenuQuitter()" routerLink="association/dons">Faire un don</span>
         </div>
         
         <div>
-            <button (mouseenter)="sousMenuQuitter()" mat-flat-button>Espace membre</button>
+            <button (mouseenter)="sousMenuQuitter()" mat-flat-button routerLink="compte/connection">Espace membre</button>
         </div>
         
         <div>
-            <button (mouseenter)="sousMenuQuitter()" mat-icon-button>
+            <button (mouseenter)="sousMenuQuitter()" mat-icon-button routerLink="recherche">
                 <mat-icon class="icon-recherche">
                    search 
                 </mat-icon>
@@ -86,7 +86,7 @@
 
                 <p>{{contenuSousMenu.paragraphePresentation2}}</p>
                 
-                <button routerLink="{{contenuSousMenu.tableauxBoutons2.lienBouton}}" (click)="sousMenuQuitter()" mat-flat-button>{{contenuSousMenu.tableauxBoutons2.titreBouton}}</button>
+                <button routerLink="{{contenuSousMenu.boutons2.lienBouton}}" (click)="sousMenuQuitter()" mat-flat-button>{{contenuSousMenu.boutons2.titreBouton}}</button>
 
             
             </div>

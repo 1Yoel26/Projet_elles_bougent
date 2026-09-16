@@ -1,0 +1,37 @@
+.div-grid-col-1-conteneur{
+    gap: 15px;
+}
+
+
+.div-boutons{
+    width: 100%;
+    //border: 2px solid orangered;
+}
+
+
+.div-grid-col-2-fixe{
+
+    width: 100%;
+    //border: 2px solid orangered;
+    gap: 10px;
+    padding: 4px;
+}
+
+.div-grid-col-2-fixe a{
+
+    text-decoration: none;
+
+}
+
+.titres-images{
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.div-presentation-rose{
+    background-color: var(--rose-claire);
+    padding: 12px;
+    border-radius: 12px;
+}

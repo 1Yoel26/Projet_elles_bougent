@@ -1,0 +1,25 @@
+// Css du menu pour mobiles et tablettes (par défaut) :
+
+.div-menu-complet-ordinateur{
+    display: none;
+}
+
+.div-containeur-complet-menu-mobile{
+    display: block;
+}
+
+
+
+// Css du menu pour écrans
+@media(min-width: 1020px){
+
+    .div-menu-complet-ordinateur{
+        display: block;
+    }
+
+    .div-containeur-complet-menu-mobile{
+        display: none;
+    }
+    
+
+}

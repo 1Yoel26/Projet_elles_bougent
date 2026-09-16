@@ -8,7 +8,7 @@ export interface SousMenuPrincipal {
 
     titrePresentation2: string,
     paragraphePresentation2: string,
-    tableauxBoutons2: TableauxBouttons
+    boutons2: TableauxBouttons
 
 }
 

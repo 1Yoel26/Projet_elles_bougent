@@ -1,0 +1,33 @@
+.div-containeur-complet-menu-mobile{
+    position: fixed;
+    top: 0px;
+    box-shadow: var(--mat-sys-level2);
+    z-index: 100000000000;
+}
+
+
+
+.div-grid-menu-mobile{
+
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.logo-20-ans{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+

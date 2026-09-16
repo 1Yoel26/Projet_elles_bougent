@@ -1,7 +1,33 @@
-<app-header></app-header>
+<mat-sidenav-container>
 
-    <main>
-        <router-outlet />
-    </main>
-    
-<app-footer></app-footer>
+    <mat-sidenav
+    #menu 
+    mode="over"
+    position="end">
+
+        <app-menu-mobile-deroulant [idDuMenuPourEnfant3]="menu" >
+        </app-menu-mobile-deroulant>
+
+    </mat-sidenav>
+
+
+    <mat-sidenav-content>
+
+        <app-header [idDuMenuPourEnfant1]="menu">
+        </app-header>
+
+        <main>
+            <router-outlet />
+        </main>
+        
+        <app-footer>
+        </app-footer>
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+
+
+
+

@@ -1,0 +1,53 @@
+<div class="div-grid-col-1 div-grid-col-1-conteneur">
+
+    <div>
+        <h3>{{contenuSousMenu.titrePresentation1}}</h3>
+        <p>
+            {{contenuSousMenu.paragraphePresentation1}}
+        </p>
+    </div>
+
+    <div class="div-flex-row div-boutons">
+
+        @for (item of contenuSousMenu.tableauxBoutons1; track $index) {
+            
+            <button mat-raised-button 
+            routerLink="{{item.lienBouton}}"
+            (click)="fermerLeMenu()">
+                {{item.titreBouton}}
+            </button>
+        }
+
+    </div>
+
+    
+    <div class="div-grid-col-2-fixe">
+
+        @for (item of contenuSousMenu.listeNomsImages; track $index) {
+            
+            <div>
+                <a routerLink="{{item.urlPage}}" (click)="fermerLeMenu()">
+                    <img class="border-radius" src="{{item.cheminImage}}" alt="" width="100%"><br>
+                    <span class="titres-images">{{item.titreImage}}</span>
+                </a>
+            </div>
+
+        }
+
+    </div>
+
+
+    <div class="div-presentation-rose">
+        <h3>{{contenuSousMenu.titrePresentation2}}</h3>
+        <p>
+            {{contenuSousMenu.paragraphePresentation2}}
+        </p>
+
+        <button 
+        mat-flat-button routerLink="{{contenuSousMenu.boutons2.lienBouton}}"
+        (click)="fermerLeMenu()">
+            {{contenuSousMenu.boutons2.titreBouton}}
+        </button>
+    </div>
+
+</div>

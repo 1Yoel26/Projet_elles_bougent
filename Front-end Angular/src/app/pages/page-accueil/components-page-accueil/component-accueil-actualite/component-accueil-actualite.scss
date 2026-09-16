@@ -2,11 +2,12 @@
     background-color: rgb(255, 255, 255, 0.5);
     border-radius: 10px;
     overflow: hidden;
+    height: 100%;
 }
 
 .div-item-img{
     
-    height: 150px;
+    height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     //border-radius: 10px;
@@ -14,7 +15,7 @@
 
 
 .div-item-texte{
-    height: 200px;
+    //height: 200px;
     padding: 20px;
 }
 
