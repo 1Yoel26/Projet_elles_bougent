@@ -7,27 +7,27 @@
         </div>
         
         <div>
-            <span (mouseenter)="lienSurvoler('association')">L'association</span>
+            <span class="lienNonCliquable" (mouseenter)="lienSurvoler('association')">L'association</span>
         </div>
         
         <div>
-            <span (mouseenter)="lienSurvoler('actions')">Nos actions</span>
+            <span class="lienNonCliquable" (mouseenter)="lienSurvoler('actions')">Nos actions</span>
         </div>
         
         <div>
-            <span (mouseenter)="lienSurvoler('delegations')">Délégations</span>
+            <span class="lienNonCliquable"(mouseenter)="lienSurvoler('delegations')">Délégations</span>
         </div>
         
         <div>
-            <span (mouseenter)="lienSurvoler('engagement')">S'engager</span>
+            <span class="lienNonCliquable" (mouseenter)="lienSurvoler('engagement')">S'engager</span>
         </div>
         
         <div>
-            <span (mouseenter)="sousMenuQuitter()" routerLink="actualites">Actualités</span>
+            <span class="lienCliquable" (mouseenter)="sousMenuQuitter()" routerLink="actualites">Actualités</span>
         </div>
         
         <div>
-          <span (mouseenter)="sousMenuQuitter()" routerLink="association/dons">Faire un don</span>
+          <span class="lienCliquable" (mouseenter)="sousMenuQuitter()" routerLink="association/dons">Faire un don</span>
         </div>
         
         <div>
@@ -70,9 +70,9 @@
                 @for (item of contenuSousMenu.listeNomsImages; track $index) {
                     
                     <div>
-                        <a routerLink="{{item.urlPage}}" (click)="sousMenuQuitter()">
+                        <a class="lienCliquable" routerLink="{{item.urlPage}}" (click)="sousMenuQuitter()">
                             <img class="border-radius" src="{{item.cheminImage}}" alt="" width="100%">
-                            <span class="titres-images">{{item.titreImage}}</span>
+                            <span class="lienCliquable">{{item.titreImage}}</span>
                         </a>
                     </div>
 
@@ -86,8 +86,18 @@
 
                 <p>{{contenuSousMenu.paragraphePresentation2}}</p>
                 
-                <button routerLink="{{contenuSousMenu.boutons2.lienBouton}}" (click)="sousMenuQuitter()" mat-flat-button>{{contenuSousMenu.boutons2.titreBouton}}</button>
+                
+                @if (contenuSousMenu.boutons2.lienBouton.startsWith("mailto:")) {
+                    
+                    <a href="{{contenuSousMenu.boutons2.lienBouton}}" (click)="sousMenuQuitter()" mat-flat-button>{{contenuSousMenu.boutons2.titreBouton}}</a>
+                    
+                }@else {
 
+                    <a routerLink="{{contenuSousMenu.boutons2.lienBouton}}" (click)="sousMenuQuitter()" mat-flat-button>{{contenuSousMenu.boutons2.titreBouton}}</a>
+                
+                }
+
+                
             
             </div>
 

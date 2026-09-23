@@ -30,24 +30,41 @@
     margin-right: 5vh;
 }
 
-.div-grid-menu-col-9 span{
-    color: black;
-    cursor: default;
-    text-decoration: underline;
-}
 
 .icon-recherche{
     color: var(--rose-fonce);
 }
 
 
-.div-grid-menu-col-9 span:hover{
-    color: var(--rose-fonce);
+
+.lienCliquable{
+
+    color: black;
+    //text-decoration: underline;
+
 }
 
-.div-grid-menu-col-9 span:focus{
+
+
+
+.lienCliquable:hover{
+
+    cursor: pointer;
     color: var(--rose-fonce);
-    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.lienCliquable:focus{
+
+    color: var(--rose-fonce);
+    text-decoration: none;
+
+}
+
+
+.lienNonCliquable{
+    cursor: pointer;
 }
 
 
@@ -66,11 +83,14 @@
 }
 
 
-.titres-images{
-    font-weight: bold;
-}
-
 
 .border-radius{
     border-radius: 15px;
+}
+
+
+.lienSousMenu{
+    color: black;
+    font-weight: 200;
+    text-decoration: underline;
 }

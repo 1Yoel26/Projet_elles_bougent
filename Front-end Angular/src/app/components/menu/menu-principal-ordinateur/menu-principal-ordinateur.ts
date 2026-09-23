@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterLink } from '@angular/router';
@@ -19,7 +19,6 @@ import { MatIcon } from "@angular/material/icon";
 })
 export class MenuPrincipalOrdinateur {
 
-
   public contenuSousMenu!: SousMenuPrincipal;
   lienEstSurvoler: string | null = null;
   listeDesLiensASurvoler: string[] = ["association", "actions", "delegations", "engagement"];
@@ -39,7 +38,7 @@ export class MenuPrincipalOrdinateur {
     if(this.lienEstSurvoler != null && this.listeDesLiensASurvoler.includes(this.lienEstSurvoler)){
       
       this.contenuSousMenu = dataMenuOrdinateur[this.lienEstSurvoler];
-      
+
     }
     // si le lien récupérer n'est pas valide (par mesure de sécurité):
     else{
