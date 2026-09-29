@@ -18,8 +18,9 @@
             {{titre}}
         </h3>
 
-        <p>
-            {{description}}
+        <br>
+        <p [innerHTML]="description">
+            
         </p>
 
         <!--Le if() sert à gerer le cas ou il n ya pas de boutton à
@@ -27,8 +28,18 @@
         
         @if (titreBouton != "") {
 
+            <br><br>
             <button mat-stroked-button routerLink="{{lienBouton}}">
                 {{titreBouton}}
+            </button>
+
+        }
+
+          @if (titreBouton2 != "") {
+
+            &nbsp;
+            <button mat-stroked-button routerLink="{{lienBouton2}}">
+                {{titreBouton2}}
             </button>
 
         }

@@ -23,6 +23,9 @@ import { PageConnectionCompte } from './pages/page-connection-compte/page-connec
 import { PageRecherche } from './pages/page-recherche/page-recherche';
 import { PageActualites } from './pages/page-actualites/page-actualites';
 import { PageTaxeApprentissage } from './pages/page-taxe-apprentissage/page-taxe-apprentissage';
+import { PagePartenaires } from './pages/page-partenaires/page-partenaires';
+import { PagePersonnelsEducatifs } from './pages/page-personnels-educatifs/page-personnels-educatifs';
+import { PageAnnuaire } from './pages/page-annuaire/page-annuaire';
 
 export const routes: Routes = [
     {
@@ -120,7 +123,20 @@ export const routes: Routes = [
 
 
     {
+        path: "engagement/reseau-educatif/personnels-educatifs", component: PagePersonnelsEducatifs
+    },
+
+
+    {
         path: "engagement/associations", component: PageAssociationsInstitutions
+    },
+
+    {
+        path: "engagement/partenaires", component: PagePartenaires
+    },
+
+    {
+        path: "engagement/partenaires/annuaire", component: PageAnnuaire
     },
 
     

@@ -1,10 +1,11 @@
 import { NgStyle } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-component-accueil-inscription',
-  imports: [MatButtonModule, NgStyle],
+  imports: [MatButtonModule, NgStyle, RouterLink],
   templateUrl: './component-accueil-inscription.html',
   styleUrl: './component-accueil-inscription.scss',
 })
@@ -13,5 +14,6 @@ export class ComponentAccueilInscription {
   @Input() backgroundImage: string = "";
   @Input() texte: string = "";
   @Input() texteBoutton = "";
+  @Input() lienBouton = "";
 
 }

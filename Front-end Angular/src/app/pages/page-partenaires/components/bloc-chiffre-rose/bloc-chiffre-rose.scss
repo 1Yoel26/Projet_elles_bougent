@@ -1,0 +1,24 @@
+.div-container-rose{
+    background-color: var(--rose-claire);
+    padding: 25px;
+}
+
+
+.div-container-chiffre-titre{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.div-flex-col-center div{
+    text-align: center;
+}
+
+
+.chiffre{
+    font-size: 45px;
+    color: var(--rose-fonce);
+    text-align: center;
+}

@@ -3,11 +3,12 @@
     <div class="divCarrousselDesPartenaires" [style.animation-duration.s]="dureeDiapo">
 
         @for(nomUneImage of listeNomsImages; track nomUneImage){
-
-            <img [src]="cheminImage + nomUneImage"    alt="">
-
+            <a routerLink="{{lienPage}}">
+                <img [src]="cheminImage + nomUneImage" alt="">
+            </a>
         }
 
+        
         @for(nomUneImage of listeNomsImages; track nomUneImage){
 
             <img [src]="cheminImage + nomUneImage"    alt="">

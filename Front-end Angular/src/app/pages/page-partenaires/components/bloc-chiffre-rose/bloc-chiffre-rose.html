@@ -1,0 +1,40 @@
+<div class="div-container-rose">
+
+    <div class="div-grid-col-1">
+
+        <div>
+            <h2 class="titre-marron">{{titre}}</h2>
+        </div>
+
+        <app-espace-petit></app-espace-petit>
+
+        <div class="div-grid-col-6">
+
+            @for(item of listeChiffreTitre; track $index;){
+
+                <div class="div-flex-col-center">
+                    <div>
+                        <strong class="chiffre">{{item.chiffre}}</strong>
+                    </div>
+
+                    <div>
+                        <strong>{{item.titre}}</strong>
+                    </div>
+    
+                </div>
+
+            }
+
+        </div>
+
+        <app-espace-petit></app-espace-petit>
+
+        <div>
+            <button routerLink="{{lienBouton}}" mat-flat-button>{{titreBouton}}</button>
+        </div>
+
+        
+
+    </div>
+
+</div>

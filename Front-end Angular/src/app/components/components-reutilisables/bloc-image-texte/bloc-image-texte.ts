@@ -15,5 +15,7 @@ export class BlocImageTexte {
   @Input() description : string = "";
   @Input() titreBouton : string = "";
   @Input() lienBouton: string = "";
+  @Input() titreBouton2 : string = "";
+  @Input() lienBouton2: string = "";
   @Input() cheminImage : string = "";
 }

@@ -71,9 +71,9 @@ body{
 
 
 main{
-  width: 100%;
+  width: 95%;
   margin: auto;
-  margin-top: 110px; // la taille du menu fixed pour ordinateur (100px) + petite marge
+  margin-top: 102px; // la taille du menu fixed pour ordinateur (100px) + mini marge
   font-family: roboto;
   background-color: white;
 }
@@ -100,4 +100,9 @@ main{
 
   background-color: #f31c7d;
 
+}
+
+
+.titre-marron{
+  color: var(--rose-marron);
 }

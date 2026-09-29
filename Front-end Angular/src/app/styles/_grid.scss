@@ -11,12 +11,13 @@
 .div-grid-col-3,
 .div-grid-col-4,
 .div-grid-col-5,
+.div-grid-col-6,
 .div-grid-mobile,
 .div-grid-col-2-42
 {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 30px;
     padding: 10px;
 }
 
@@ -61,6 +62,16 @@
 }
 
 
+ .div-grid-col-2-5-1{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-items: center;
+    text-align: center;
+}
+
+
 // Css pour tablettes 
 @media(min-width: 768px) {
     // Css pour mobiles (par défaut)
@@ -75,6 +86,7 @@
     .div-grid-col-3,
     .div-grid-col-4,
     .div-grid-col-5,
+    .div-grid-col-6,
     .div-grid-mobile,
     .div-grid-col-2-42
     {
@@ -98,6 +110,15 @@
         gap: 20px;
         width: 50%;
         margin: auto;
+    }
+
+    .div-grid-col-2-5-1{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        justify-items: center;
+        text-align: center;
     }
 
 
@@ -175,7 +196,28 @@
         margin-right: 5vw;
     }
 
+
+    .div-grid-col-5{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding-inline: 10px;
+    }
+
+
+    .div-grid-col-6{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
     
+
+    .div-grid-col-2-5-1{
+
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        gap: 15px;
+
+    }
 
 
 

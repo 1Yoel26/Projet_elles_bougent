@@ -1,3 +1,7 @@
+h3{
+    margin: 0px;
+}
+
 .titre{
     color: var(--rose-marron);
 }
@@ -6,7 +10,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     //border: 2px solid blue;
-    min-height: 250px;
+    height: 100%;
+    min-height: 200px;
 }
 
 

@@ -2,8 +2,10 @@ video{
     display: block;
     width: 95%;
     margin: auto;
+    margin-top: 140px;
     border-radius: 30px;
     border: 2px solid var(--rose-fonce);
+    //border: none;
 }
 
 .div-bilan-chiffres{
@@ -49,17 +51,19 @@ video{
 }
 
 
-.div-container-carte{
-    border: 2px solid rgb(61, 141, 211);
-    padding: 15px;
-
-}
 
 #div-item-carte{
     height: 100%;
     min-height: 300px;
+    border: 1px solid   rgb(black, 0.09);
+    border-radius: 30px;
 }
 
+#div-item-carte p{
+    height: 100%;
+    text-align: center;
+    vertical-align: center;
+}
 
 .marker-cluster div span{
     font-size: 80px;

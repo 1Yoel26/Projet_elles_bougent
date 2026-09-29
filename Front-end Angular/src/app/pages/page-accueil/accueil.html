@@ -55,7 +55,7 @@
             carrières d'avenir.
         </p>
 
-       <button mat-raised-button>Découvrir l'association</button>
+       <button mat-raised-button routerLink="association">Découvrir l'association</button>
     </div>
 
     <div class="div-chiffres-grid">
@@ -106,28 +106,32 @@
     <app-component-accueil-inscription
     backgroundImage="images/images-page-accueil/agir-partenaire.jpg"
     texte="Je suis une entreprise ou un établissement d'enseignement supérieur"
-    texteBoutton="Je deviens partenaire">
+    texteBoutton="Je deviens partenaire"
+    lienBouton="engagement/partenaires">
 
     </app-component-accueil-inscription>
 
     <app-component-accueil-inscription
     backgroundImage="images/images-page-accueil/agir-marraine.jpg"
     texte="Je suis une ingénieure ou une technicienne"
-    texteBoutton="Je deviens bénévole">
+    texteBoutton="Je deviens bénévole"
+    lienBouton="engagement/benevoles">
 
     </app-component-accueil-inscription>
 
     <app-component-accueil-inscription
     backgroundImage="images/images-page-accueil/agir-education.jpg"
     texte="Je travaille dans l'Éducation nationale"
-    texteBoutton="Je m'inscris">
+    texteBoutton="Je m'inscris"
+    lienBouton="engagement/reseau-educatif/personnels-educatifs">
 
     </app-component-accueil-inscription>
 
     <app-component-accueil-inscription
     backgroundImage="images/images-page-accueil/agir-etudiantes.jpg"
     texte="Je suis étudiante en sciences ou en technique"
-    texteBoutton="Je m'inscris">
+    texteBoutton="Je m'inscris"
+    lienBouton="engagement/etudiantes">
 
     </app-component-accueil-inscription>
 
@@ -172,7 +176,7 @@
     <app-espace-petit></app-espace-petit>
 
     <div class="div-grid-col-1">
-        <button mat-raised-button>Voir toutes les actualités</button>
+        <button mat-raised-button routerLink="actualites">Voir toutes les actualités</button>
     </div>
     
     <app-espace-petit></app-espace-petit>
@@ -188,7 +192,7 @@
     titre="Les partenaires Elles bougent"
 
     contenu="Entreprises, établissements d’enseignement supérieur, institutionnels, fédérations et associations,
-tous s’engagent aux côtés d’Elles bougent pour valoriser les talents féminins et promouvoir la mixité dans les secteurs scientifiques, techniques et industriels."> 
+            tous s’engagent aux côtés d’Elles bougent pour valoriser les talents féminins et promouvoir la mixité dans les secteurs scientifiques, techniques et industriels."> 
 
 </app-component-text-centrer-titre-rose-marron>
 
@@ -228,14 +232,18 @@ tous s’engagent aux côtés d’Elles bougent pour valoriser les talents fémi
             scientifiques et techniques.
         </p>
 
-        <button mat-raised-button>Voir nos actions</button>
+        <button mat-raised-button routerLink="actions">Voir nos actions</button>
 
     </div>
 
+    <!--Ce div est vide, mais sert de conteneur pour la carte maps Leaflet-->
     <div id="div-item-carte">
-
+        <p>
+            Carte Maps
+        </p>   
     </div>
 
 </div>
 
 <app-espace-petit></app-espace-petit>
+

@@ -9,6 +9,8 @@ import { ComponentAccueil1 } from './components-page-accueil/component-accueil1/
 import { ComponentAccueilInscription } from './components-page-accueil/component-accueil-inscription/component-accueil-inscription';
 import { ComponentAccueilActualite } from './components-page-accueil/component-accueil-actualite/component-accueil-actualite';
 import { Diaporama } from './components-page-accueil/diaporama/diaporama';
+import { RouterLink } from '@angular/router';
+import { TitreMarron } from '../../components/components-reutilisables/titre-marron/titre-marron';
 
 @Component({
   selector: 'app-accueil',
@@ -20,7 +22,8 @@ import { Diaporama } from './components-page-accueil/diaporama/diaporama';
     ComponentTextCentrerTitreRoseMarron,
     ComponentAccueilInscription,
     ComponentAccueilActualite,
-    Diaporama
+    Diaporama,
+    RouterLink
 ],
   templateUrl: './accueil.html',
   styleUrl: './accueil.scss',
@@ -56,7 +59,7 @@ export class Accueil implements OnInit, AfterViewInit{
 
     // ajustement du zoom sur la France avec un zoom sur 5 :
     this.carte
-    .setView([46.603354, 1.888334], 5);
+    .setView([46.603354, 1.888334], 1);
   
 
     // definition du fond d'ecran de la carte (avec la carte du monde)
