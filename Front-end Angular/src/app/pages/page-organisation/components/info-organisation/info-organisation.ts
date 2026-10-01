@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-bloc-info-rose',
+  selector: 'app-info-organisation',
   imports: [],
-  templateUrl: './bloc-info-rose.html',
-  styleUrl: './bloc-info-rose.scss',
+  templateUrl: './info-organisation.html',
+  styleUrl: './info-organisation.scss',
 })
-export class BlocInfoRose {
+export class InfoOrganisation {
 
   @Input() cheminImage: string = "";
   @Input() titre: string = "";

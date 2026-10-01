@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
+import { TitrePage } from '../../components/components-reutilisables/titre-principal-page/titre-page';
+import { BlocTexteImage } from '../../components/components-reutilisables/bloc-texte-image/bloc-texte-image';
+import { EspacePetit } from '../../components/components-espaces-verticales/components-espaces/espace-petit/espace-petit';
+import { BlocInfoRose } from '../../components/components-reutilisables/bloc-info-rose/bloc-info-rose';
+import { TitreMarron } from '../../components/components-reutilisables/titre-marron/titre-marron';
 
 @Component({
   selector: 'app-page-benevole',
-  imports: [],
+  imports: [TitrePage, BlocTexteImage, EspacePetit, BlocInfoRose, TitreMarron],
   templateUrl: './page-benevole.html',
   styleUrl: './page-benevole.scss',
 })

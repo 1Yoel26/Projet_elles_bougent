@@ -6,7 +6,7 @@ import { BlocChiffreRose } from './components/bloc-chiffre-rose/bloc-chiffre-ros
 import { listeChiffreTitre } from '../../interfaces/listeChiffreTitre';
 import { TitreMarron } from '../../components/components-reutilisables/titre-marron/titre-marron';
 import { UnPartenaire } from './components/un-partenaire/un-partenaire';
-import { BlocInfoRose } from './components/bloc-info-rose/bloc-info-rose';
+import { BlocInfoRose } from '../../components/components-reutilisables/bloc-info-rose/bloc-info-rose';
 
 @Component({
   selector: 'app-page-partenaires',

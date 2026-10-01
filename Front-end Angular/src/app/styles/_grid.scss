@@ -1,6 +1,6 @@
 // Grid Css globale :
 [class*="div-grid-col"]{
-    gap: 10px;
+    gap: 15px;
     margin: 15px;
     margin-inline: 0px;
 }
@@ -62,7 +62,6 @@
 
 
  .div-grid-col-2-5-1{
-
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -114,6 +113,10 @@
         text-align: center;
     }
 
+    .div-grid-col-2-5-1 .div-bouton{
+        margin: auto;
+    }
+
 
 }
 
@@ -153,7 +156,7 @@
 
     .div-grid-col-2-42{
         display: grid;
-        grid-template-columns: 4fr 2fr;
+        grid-template-columns: 4fr 1.5fr;
         background-color: var(--rose-claire);
     }
 
@@ -200,10 +203,24 @@
 
         display: grid;
         grid-template-columns: 5fr 1fr;
+        
+    }
 
+    
+    .div-grid-col-2-5-1 .div-bouton{
+
+        margin: auto;
+        
     }
 
 
+}
 
+
+
+// CSS specifique à certains div grid :
+.div-grid-col-2-42{
+    margin: 0px;
+    padding: 0px;
 }
 
