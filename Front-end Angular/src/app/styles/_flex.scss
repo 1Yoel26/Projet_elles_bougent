@@ -63,3 +63,31 @@
     gap: 15px;
 
 }
+
+// Css pour mobile (par défaut) :
+.div-une-info-rose{
+    flex-direction: column;
+}
+
+
+// Css pour tablette
+@media(min-width: 768px) {
+
+    .div-une-info-rose{
+        flex-direction: row;
+    }
+
+}
+
+// Css pour ordinateur et grand écran
+@media(min-width: 1020px){
+
+    .div-une-info-rose{
+        flex-direction: row;
+    }
+
+    
+
+}
+
+

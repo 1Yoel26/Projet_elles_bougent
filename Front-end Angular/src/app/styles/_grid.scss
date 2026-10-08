@@ -52,6 +52,8 @@
 .div-grid-col-5-footer {
     display: grid;
     grid-template-columns: 1fr 1fr; 
+    padding: 15px;
+    margin-bottom: 0px;
 }
 
 .div-grid-col-5-footer .div-presentation {

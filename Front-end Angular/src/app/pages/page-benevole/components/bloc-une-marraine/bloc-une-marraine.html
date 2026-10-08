@@ -1,0 +1,31 @@
+<a routerLink="/actions/conseils/annuaire/{{lienIdMarraine}}">
+
+    <div class="div-container-une-marraine div-flex-col-center">
+
+        <div class="div-image"
+        [ngStyle]= "{
+            'background-image': 'url(' + cheminImage + ')'
+        }"
+        >
+        
+            <div class="div-type">
+                <span>{{type}}</span>
+            </div>
+
+        </div>
+
+        
+
+        <div class="div-text">
+
+            <p class="p-metier">
+                {{metierEtEntrepriseActuel}}
+            <p>
+
+            <p class="p-date">
+                Membre depuis {{messageDurerInscription}}
+            </p>
+        </div>
+    </div>
+
+</a>

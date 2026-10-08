@@ -26,6 +26,7 @@ import { PageTaxeApprentissage } from './pages/page-taxe-apprentissage/page-taxe
 import { PagePartenaires } from './pages/page-partenaires/page-partenaires';
 import { PagePersonnelsEducatifs } from './pages/page-personnels-educatifs/page-personnels-educatifs';
 import { PageAnnuaire } from './pages/page-annuaire/page-annuaire';
+import { PageAnnuaireMarraine } from './pages/page-annuaire-marraine/page-annuaire-marraine';
 
 export const routes: Routes = [
     {
@@ -69,6 +70,16 @@ export const routes: Routes = [
     
     {
         path: "actions/grands-rendez-vous", component: PageGrandsRendezVous
+    },
+    
+
+    {
+        path: "actions/conseils/annuaire", component: PageAnnuaireMarraine
+    },
+
+
+    {
+        path: "actions/conseils/annuaire/:idMarraine", component: PageAnnuaireMarraine
     },
 
     

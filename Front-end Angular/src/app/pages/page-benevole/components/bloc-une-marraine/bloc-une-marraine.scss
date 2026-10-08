@@ -1,0 +1,58 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.div-container-une-marraine{
+
+    //border: 2px solid green;
+
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+}
+
+
+.div-image{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    aspect-ratio: 1 / 1.1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; // pour pouvoir positionner après le div enfant div-type
+}
+
+
+.div-type{
+    background-color: var(--rose-fonce);
+    color: white;
+    padding-inline: 6px;
+    border-radius: 10px;
+    position: absolute; // par rapport au div parent div-image
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+}
+
+
+.div-text{
+
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.p-metier{
+    font-weight: 500;
+}
+
+
+.p-date{
+
+    color: var(--rose-fonce);
+    font-size: small;
+
+}
+

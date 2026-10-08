@@ -5,10 +5,11 @@ import { TitreMarron } from "../../components/components-reutilisables/titre-mar
 import { EspacePetit } from "../../components/components-espaces-verticales/components-espaces/espace-petit/espace-petit";
 import { BlocTexteImage } from "../../components/components-reutilisables/bloc-texte-image/bloc-texte-image";
 import { Action } from './components-page-actions/action/action';
+import { EspaceMini } from '../../components/components-espaces-verticales/components-espaces/espace-mini/espace-mini';
 
 @Component({
   selector: 'app-actions',
-  imports: [TitrePage, BlocImageTexte, TitreMarron, EspacePetit, BlocTexteImage, Action],
+  imports: [TitrePage, BlocImageTexte, TitreMarron, EspacePetit, BlocTexteImage, Action, EspaceMini],
   templateUrl: './actions.html',
   styleUrl: './actions.scss',
 })

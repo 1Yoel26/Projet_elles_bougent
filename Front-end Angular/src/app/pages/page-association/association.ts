@@ -4,16 +4,18 @@ import { EspacePetit } from "../../components/components-espaces-verticales/comp
 import { BlocTexteImage } from "../../components/components-reutilisables/bloc-texte-image/bloc-texte-image";
 import { BlocImageTexte } from "../../components/components-reutilisables/bloc-image-texte/bloc-image-texte";
 import { TexteBoutonRose } from './components-page-association/bloc-info-rose/texte-bouton-rose';
+import { BlocInfoRose } from '../../components/components-reutilisables/bloc-info-rose/bloc-info-rose';
 
 @Component({
   selector: 'app-association',
   imports: [
-    TitrePage, 
-    EspacePetit, 
-    BlocTexteImage, 
-    BlocImageTexte, 
-    TexteBoutonRose
-  ],
+    TitrePage,
+    EspacePetit,
+    BlocTexteImage,
+    BlocImageTexte,
+    TexteBoutonRose,
+    BlocInfoRose
+],
   templateUrl: './association.html',
   styleUrl: './association.scss',
 })

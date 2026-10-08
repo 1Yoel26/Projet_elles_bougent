@@ -1,8 +1,19 @@
-.div-grid-col-2-5-1{
+.div-une-info-rose{
     background-color: var(--rose-claire);
     padding: 5px;
+    padding-inline: 10px;
     border-radius: 15px;
+    display: flex;
+    // le flex-direction est géré dans le styles/_flex.scss (pour gérer le flex-direction en fonction de la taille de l'écran)
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;//
+    gap: 20px;
     height: 100%;
-    margin: 0px;
 }
 
+
+.div-bouton button{
+
+    white-space: nowrap;
+}
